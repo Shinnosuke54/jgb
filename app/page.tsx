@@ -1,7 +1,5 @@
 "use client"; // Marks this component as a Client Component
 
-import Image from "next/image";
-
 function calculate() {
   const n = parseInt(document.getElementById("n").value);
   const i = parseFloat(document.getElementById("i").value); // Use parseFloat for decimals
