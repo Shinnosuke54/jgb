@@ -21,7 +21,6 @@ export default function Home() {
   return (
     <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
       <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <li>Shinnosuke Ino Presents</li>
         
         <h1>Bond Price Calculator</h1>
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
@@ -34,7 +33,7 @@ export default function Home() {
           <li>Input future value:</li>
           <input type="text" id="fv" className="text-green-500" />
           <li></li>
-          <button onClick={calculate} className="outline-green-500 text-green-500 font-bold py-1 px-3 w-100 h-100 rounded-[50px] shadow-[inset_20px_20px_11px_#ededed,_inset_-20px_-20px_11px_#ffffff]">Calculate</button>
+          <button onClick={calculate} className="bg-white text-green-500 font-bold py-1 px-3 w-100 h-100 rounded-[50px]]">Calculate</button>
           <p id='pv' className="text-green-500 my-5"></p>
         </ol>
        
