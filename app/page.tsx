@@ -1,10 +1,10 @@
 "use client"; // Marks this component as a Client Component
 
 function calculate() {
-  const n = parseInt(document.getElementById("n").value);
-  const i = parseFloat(document.getElementById("i").value); // Use parseFloat for decimals
-  const p = parseFloat(document.getElementById("p").value);
-  const fv = parseFloat(document.getElementById("fv").value);
+  const n = parseInt((document.getElementById("n")! as HTMLInputElement).value);
+  const i = parseFloat((document.getElementById("i")! as HTMLInputElement).value); // Use parseFloat for decimals
+  const p = parseFloat((document.getElementById("p")! as HTMLInputElement).value);
+  const fv = parseFloat((document.getElementById("fv")! as HTMLInputElement).value);
   let x = 0;
 
   for (let j = 1; j < n; j++) {
@@ -12,7 +12,7 @@ function calculate() {
   }
   x += (p + fv) / (1 + i / 100) ** n;
 
-  document.getElementById("pv").innerHTML = `The present value is ${x.toFixed(2)}`; // Display rounded value
+  document.getElementById("pv")!.innerHTML = `The present value is ${x.toFixed(2)}`; // Display rounded value
 }
 
 export default function Home() {
